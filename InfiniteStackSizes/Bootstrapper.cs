@@ -43,7 +43,7 @@ namespace InfiniteStackSizes
 			var location = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "maxstax.ini");
 			if (!File.Exists(location))
 				return;
-			Debug.LogError("Reading Ini File.");
+
 			var settings = new Ini(location);
 			if (!settings.ContainsSection("MaxStax"))
 				return;
